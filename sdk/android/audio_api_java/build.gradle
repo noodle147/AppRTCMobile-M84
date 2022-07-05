@@ -140,6 +140,7 @@ android {
 dependencies {
     implementation project(':rtc_base.base_java')
     implementation project(':sdk.android.base_java')
+    implementation 'androidx.annotation:annotation:1.4.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
