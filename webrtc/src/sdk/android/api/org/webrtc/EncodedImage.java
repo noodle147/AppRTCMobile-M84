@@ -10,7 +10,8 @@
 
 package org.webrtc;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
+
 import java.nio.ByteBuffer;
 import java.util.concurrent.TimeUnit;
 
@@ -55,7 +56,8 @@ public class EncodedImage implements RefCounted {
   public final FrameType frameType;
   public final int rotation;
   public final boolean completeFrame;
-  public final @Nullable Integer qp;
+  public final @Nullable
+  Integer qp;
 
   // TODO(bugs.webrtc.org/9378): Use retain and release from jni code.
   @Override

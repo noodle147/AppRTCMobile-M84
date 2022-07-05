@@ -10,7 +10,7 @@
 
 package org.webrtc;
 
-import com.android.annotations.Nullable;
+import androidx.annotation.Nullable;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

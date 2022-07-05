@@ -20,7 +20,7 @@ import android.media.AudioRecordingConfiguration;
 import android.media.MediaRecorder.AudioSource;
 import android.os.Build;
 import android.os.Process;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import java.lang.System;
 import java.nio.ByteBuffer;

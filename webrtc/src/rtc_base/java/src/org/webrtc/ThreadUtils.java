@@ -14,7 +14,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.SystemClock;
 
-import com.android.annotations.Nullable;
+import androidx.annotation.Nullable;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.CountDownLatch;
@@ -25,7 +25,8 @@ public class ThreadUtils {
    * Utility class to be used for checking that a method is called on the correct thread.
    */
   public static class ThreadChecker {
-    @Nullable private Thread thread = Thread.currentThread();
+    @Nullable
+    private Thread thread = Thread.currentThread();
 
     public void checkIsOnValidThread() {
       if (thread == null) {
