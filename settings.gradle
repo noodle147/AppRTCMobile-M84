@@ -26,5 +26,9 @@ include ':rtc_base.base_java'
 project(':rtc_base.base_java').setProjectDir(new File("rtc_base/base_java"))
 include ':sdk.android.audio_api_java'
 project(':sdk.android.audio_api_java').setProjectDir(new File("sdk/android/audio_api_java"))
-include ':builtin_audio_codecs_java'
-project(':builtin_audio_codecs_java').setProjectDir(new File("sdk/android/builtin_audio_codecs_java"))
+include ':sdk.android.builtin_audio_codecs_java'
+project(':sdk.android.builtin_audio_codecs_java').setProjectDir(new File("sdk/android/builtin_audio_codecs_java"))
+include ':sdk.android.video_api_java'
+project(':sdk.android.video_api_java').setProjectDir(new File("sdk/android/video_api_java"))
+include ':sdk.android.video_java'
+project(':sdk.android.video_java').setProjectDir(new File("sdk/android/video_java"))
