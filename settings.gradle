@@ -32,3 +32,13 @@ include ':sdk.android.video_api_java'
 project(':sdk.android.video_api_java').setProjectDir(new File("sdk/android/video_api_java"))
 include ':sdk.android.video_java'
 project(':sdk.android.video_java').setProjectDir(new File("sdk/android/video_java"))
+include(':sdk.android.swcodecs_java')
+project(':sdk.android.swcodecs_java').setProjectDir(new File("sdk/android/swcodecs_java"))
+include ':sdk.android.swcodecs_java'
+project(':sdk.android.swcodecs_java').setProjectDir(new File("sdk/android/swcodecs_java"))
+include ':sdk.android.libvpx_vp8_java'
+project(':sdk.android.libvpx_vp8_java').setProjectDir(new File("sdk/android/libvpx_vp8_java"))
+include ':sdk.android.libvpx_vp9_java'
+project(':sdk.android.libvpx_vp9_java').setProjectDir(new File("sdk/android/libvpx_vp9_java"))
+include ':sdk.android.hwcodecs_java'
+project(':sdk.android.hwcodecs_java').setProjectDir(new File("sdk/android/hwcodecs_java"))
