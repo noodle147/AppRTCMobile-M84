@@ -176,11 +176,16 @@ dependencies {
 }
 
 afterEvaluate {
-    android {
-        sourceSets {
-            main {
-                println "==>> ${java.srcDirs}"
-            }
-        }
+    def tasksToDisable = tasks.findAll {
+        return (it.name.equals('generateDebugSources')  // causes unwanted AndroidManifest.java
+                || it.name.equals('generateReleaseSources')
+                || it.name.endsWith('BuildConfig')  // causes unwanted BuildConfig.java
+                || it.name.equals('preDebugAndroidTestBuild')
+                || it.name.endsWith('Aidl')
+                || it.name.endsWith('Renderscript')
+                || it.name.endsWith('Shaders'))
+    }
+    tasksToDisable.each { Task task ->
+        task.enabled = false
     }
 }
