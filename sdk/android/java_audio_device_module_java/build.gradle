@@ -23,18 +23,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    sourceSets {
-        main {
-            java.srcDirs += '../../../webrtc/src/sdk/android/src/java'
-            java.srcDirs += '../../../webrtc/src/sdk/android/api'
-            java.filter.exclude([
-                    "org/webrtc/*.java",
-                    "org/webrtc/audio/LegacyAudioDeviceModule.java",
-                    "org/webrtc/audio/AudioDeviceModule.java",
-                    "org/webrtc/*.java",
-            ])
-        }
-    }
 }
 
 dependencies {
