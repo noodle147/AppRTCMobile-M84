@@ -23,50 +23,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    sourceSets {
-        main {
-            java.srcDirs += '../../../webrtc/src/sdk/android/src/java'
-            java.filter.exclude([
-                    "org/webrtc/audio/*.java",
-                    "org/webrtc/H264Utils.java",
-                    "org/webrtc/WrappedNativeI420Buffer.java",
-                    "org/webrtc/VideoDecoderWrapper.java",
-                    "org/webrtc/VideoCodecMimeType.java",
-                    "org/webrtc/WebRtcClassLoader.java",
-                    "org/webrtc/CalledByNative.java",
-                    "org/webrtc/MediaCodecWrapperFactory.java",
-                    "org/webrtc/RefCountDelegate.java",
-                    "org/webrtc/MediaCodecWrapperFactoryImpl.java",
-                    "org/webrtc/EglBase14Impl.java",
-                    "org/webrtc/JniHelper.java",
-                    "org/webrtc/MediaCodecWrapper.java",
-                    "org/webrtc/JniCommon.java",
-                    "org/webrtc/NativeLibrary.java",
-                    "org/webrtc/AndroidVideoDecoder.java",
-                    "org/webrtc/NV21Buffer.java",
-                    "org/webrtc/MediaCodecUtils.java",
-                    "org/webrtc/MediaCodecVideoDecoderFactory.java",
-                    "org/webrtc/NativeAndroidVideoTrackSource.java",
-                    "org/webrtc/Camera1Session.java",
-                    "org/webrtc/CameraSession.java",
-                    "org/webrtc/EglBase10Impl.java",
-                    "org/webrtc/Camera2Session.java",
-                    "org/webrtc/JNILogging.java",
-                    "org/webrtc/CalledByNativeUnchecked.java",
-                    "org/webrtc/FramerateBitrateAdjuster.java",
-                    "org/webrtc/DynamicBitrateAdjuster.java",
-                    "org/webrtc/VideoEncoderWrapper.java",
-                    "org/webrtc/NV12Buffer.java",
-                    "org/webrtc/Histogram.java",
-                    "org/webrtc/BaseBitrateAdjuster.java",
-                    "org/webrtc/HardwareVideoEncoder.java",
-                    "org/webrtc/NativeCapturerObserver.java",
-                    "org/webrtc/GlGenericDrawer.java",
-                    "org/webrtc/BitrateAdjuster.java",
-                    "org/webrtc/CameraCapturer.java",
-            ])
-        }
-    }
 }
 
 dependencies {

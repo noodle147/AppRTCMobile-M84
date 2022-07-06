@@ -27,7 +27,6 @@ android {
     }
     sourceSets {
         main {
-            manifest.srcFile '../../webrtc/src/examples/androidapp/AndroidManifest.xml'
             jniLibs.srcDirs += 'jniLibs'
         }
     }

@@ -23,16 +23,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    sourceSets {
-        main {
-            java.srcDirs += '../../webrtc/src/examples/androidapp/src'
-            res.srcDirs += '../../webrtc/src/examples/androidapp/res'
-        }
-    }
 }
 
 dependencies {
-    implementation files("../../webrtc/src/out/Debug/lib.java/examples/androidapp/third_party/autobanh/autobanh.jar")
+    implementation files("libs/autobanh.jar")
     implementation project(":rtc_base.base_java")
     implementation project(":sdk.android.audio_api_java")
     implementation project(":sdk.android.base_java")
