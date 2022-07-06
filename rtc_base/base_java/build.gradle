@@ -23,11 +23,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    sourceSets {
-        main {
-            java.srcDirs += "../../webrtc/src/rtc_base/java/src"
-        }
-    }
 }
 
 dependencies {
